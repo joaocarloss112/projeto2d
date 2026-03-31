@@ -2,7 +2,7 @@
 
 ##  Descrição do Projeto
 
-Este projeto é um jogo simples de cobrança de pênalti desenvolvido utilizando **HTML5 Canvas** e **JavaScript puro**.
+Este projeto é um jogo simples de cobrança de pênalti desenvolvido utilizando **HTML5 Canvas** e **JavaScript**.
 
 O jogador controla a bola e pode chutar em direção ao gol utilizando o mouse. Um goleiro se movimenta automaticamente tentando defender as cobranças. O sistema contabiliza gols e exibe mensagens de acordo com o resultado da jogada.
 
@@ -164,22 +164,11 @@ bola.x > 95 && bola.x < 605 &&
 bola.y > 105 && bola.y < 355
 ```
 
----
-
-##  Possíveis Melhorias
-
-- Implementar física mais realista (gravidade)  
-- Melhorar colisão (círculo vs retângulo)  
-- Adicionar níveis de dificuldade  
-- Criar sistema de vidas  
-- Refatorar usando programação orientada a objetos  
-
----
 
 ##  Tecnologias Utilizadas
 
 - HTML5 Canvas  
-- JavaScript (ES6)  
+- JavaScript  
 
 ---
 
