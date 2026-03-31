@@ -135,36 +135,6 @@ ctx.setTransform(1, 0, 0, 1, 0, 0);
 
 ---
 
-##  Lógica de Movimento
-
-Interpolação suave:
-
-```js
-bola.x += (bola.alvoX - bola.x) * bola.velocidade;
-bola.y += (bola.alvoY - bola.y) * bola.velocidade;
-```
-
----
-
-##  Sistema de Colisão
-
-```js
-bola.x > goleiro.x - 40 &&
-bola.x < goleiro.x + 40 &&
-bola.y > goleiro.y &&
-bola.y < goleiro.y + 120
-```
-
----
-
-##  Detecção de Gol
-
-```js
-bola.x > 95 && bola.x < 605 &&
-bola.y > 105 && bola.y < 355
-```
-
-
 ##  Tecnologias Utilizadas
 
 - HTML5 Canvas  
@@ -172,10 +142,4 @@ bola.y > 105 && bola.y < 355
 
 ---
 
-##  Autor
-
-Projeto desenvolvido para fins educacionais com foco em:
-
-- Computação gráfica 2D  
-- Transformações geométricas  
-- Lógica de jogos  
+##  Autor - João Carlos Barbosa Da Silva
