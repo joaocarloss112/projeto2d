@@ -20,7 +20,7 @@ let goleiro = {
     y: 160,
     largura: 100,
     altura: 80,
-    velocidade: 3,
+    velocidade: 5,
     direcao: 1
 };
 
@@ -81,13 +81,11 @@ function desenhaBola(tamanho) {
 }
 
 function animar() {
-    // 6. RESET da matriz a cada frame
+    // RESET da matriz a cada frame
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, W, H);
 
     desenhaGol();
-
-    // --- LÓGICA E DESENHO DO GOLEIRO ---
     goleiro.x += goleiro.velocidade * goleiro.direcao;
     if (goleiro.x > 570 || goleiro.x < 130) goleiro.direcao *= -1;
 
@@ -96,7 +94,6 @@ function animar() {
         desenhaGoleiro();
     ctx.restore();
 
-    // --- ATUALIZAR ESTADO DA BOLA ---
     if (bola.chutando) {
         bola.x += (bola.alvoX - bola.x) * bola.velocidade;
         bola.y += (bola.alvoY - bola.y) * bola.velocidade;
@@ -136,6 +133,7 @@ function animar() {
     ctx.restore();
 
     ctx.save();
+    //transfomações seguidas e save restorare
         ctx.translate(bola.x, bola.y); 
         ctx.scale(bola.z, bola.z);     
         ctx.rotate(bola.angulo);       
